@@ -217,21 +217,18 @@ import { useRoute } from "vue-router";
 
 import {
   GridIcon,
-  CalenderIcon,
+  CadastrosIcon,
+  OrcamentosIcon,
+  TarefasIcon,
+  FinanceiroIcon,
+  EquipamentosIcon,
+  RelatoriosIcon,
+  ConfiguracoesIcon,
   UserCircleIcon,
-  ChatIcon,
-  MailIcon,
-  DocsIcon,
-  PieChartIcon,
   ChevronDownIcon,
   HorizontalDots,
-  PageIcon,
-  TableIcon,
-  ListIcon,
-  PlugInIcon,
 } from "../../icons";
 import SidebarWidget from "./SidebarWidget.vue";
-import BoxCubeIcon from "@/icons/BoxCubeIcon.vue";
 import { useSidebar } from "@/composables/useSidebar";
 
 const route = useRoute();
@@ -248,7 +245,7 @@ const menuGroups = [
         path: "/",
       },
       {
-        icon: CalenderIcon,
+        icon: CadastrosIcon,
         name: "Cadastros",
         subItems: [
           { name: "Unidades", path: "/unidades", pro: false },
@@ -260,12 +257,12 @@ const menuGroups = [
         ],
       },
       {
-        icon: UserCircleIcon,
+        icon: TarefasIcon,
         name: "Tarefas",
         path: "/tarefas",
       },
       {
-        icon: CalenderIcon,
+        icon: OrcamentosIcon,
         name: "Orçamentos",
         subItems: [
           { name: "Publicitários", path: "/publicitarios", pro: false },
@@ -273,7 +270,7 @@ const menuGroups = [
         ],
       },
       {
-        icon: CalenderIcon,
+        icon: FinanceiroIcon,
         name: "Financeiro",
         subItems: [
           { name: "Extrato de lançamentos", path: "/extrato-de-lancamentos", pro: false },
@@ -289,7 +286,7 @@ const menuGroups = [
         ],
       },
       {
-        icon: CalenderIcon,
+        icon: EquipamentosIcon,
         name: "Equipamentos",
         subItems: [
           { name: "Consulta", path: "/consulta", pro: false },
@@ -297,7 +294,7 @@ const menuGroups = [
         ],
       },
       {
-        icon: CalenderIcon,
+        icon: RelatoriosIcon,
         name: "Relatórios",
         subItems: [
           { name: "Orçamento por período", path: "/orcamento-por-periodo", pro: false },
@@ -316,7 +313,7 @@ const menuGroups = [
         ],
       },
       {
-        icon: CalenderIcon,
+        icon: ConfiguracoesIcon,
         name: "Configurações",
         subItems: [
           { name: "Opções gerais", path: "/opcoes-gerais", pro: false },
@@ -326,11 +323,6 @@ const menuGroups = [
           { name: "Tipos de documentos", path: "/tipos-de-documentos", pro: false },
           { name: "Unidades e medidas", path: "/unidades-e-medidas", pro: false },
         ],
-      },
-      {
-        icon: UserCircleIcon,
-        name: "Meus perfil",
-        path: "/meu-perfil",
       },
     ],
   },

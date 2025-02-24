@@ -1,6 +1,12 @@
 import BoxCubeIcon from "./BoxCubeIcon.vue";
 import GridIcon from "./GridIcon.vue";
-import CalenderIcon from "./CalenderIcon.vue";
+import CadastrosIcon from "./CadastrosIcon.vue";
+import OrcamentosIcon from "./OrcamentosIcon.vue";
+import TarefasIcon from "./TarefasIcon.vue";
+import FinanceiroIcon from "./FinanceiroIcon.vue";
+import EquipamentosIcon from "./EquipamentosIcon.vue";
+import RelatoriosIcon from "./RelatoriosIcon.vue"
+import ConfiguracoesIcon from "./ConfiguracoesIcon.vue";
 import TaskIcon from "./TaskIcon.vue";
 import ChatIcon from "./ChatIcon.vue";
 import MailIcon from "./MailIcon.vue";
@@ -47,6 +53,14 @@ import BellIcon from "./BellIcon.vue";
 import BarChartIcon from "./BarChartIcon.vue";
 
 export {
+  GridIcon,
+  CadastrosIcon,
+  OrcamentosIcon,
+  TarefasIcon,
+  FinanceiroIcon,
+  EquipamentosIcon,
+  RelatoriosIcon,
+  ConfiguracoesIcon,
   BellIcon,
   BarChartIcon,
   LayoutDashboardIcon,
@@ -64,9 +78,7 @@ export {
   PaperclipIcon,
   BoxIcon,
   ChevronRightIcon,
-  GridIcon,
   BoxCubeIcon,
-  CalenderIcon,
   UserCircleIcon,
   TaskIcon,
   ChatIcon,
