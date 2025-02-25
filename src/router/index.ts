@@ -17,7 +17,7 @@ const router = createRouter({
     {
       path: '/unidades',
       name: 'Unidades',
-      component: () => import('../views/Cadastros/Unidades.vue'),
+      component: () => import('../views/Cadastros/Empresas/Listar.vue'),
       meta: {
         title: 'Unidades',
       },
@@ -356,6 +356,6 @@ const router = createRouter({
 export default router
 
 router.beforeEach((to, from, next) => {
-  document.title = ` ${to.meta.title} | Sistema Jobb 3.0`
+  document.title = ` ${to.meta.title} | Sistema Jobb 4.0`
   next()
 })
