@@ -335,11 +335,11 @@ const router = createRouter({
     //   },
     // },
     {
-      path: '/signin',
-      name: 'Signin',
-      component: () => import('../views/auth/signin.vue'),
+      path: '/login',
+      name: 'Login',
+      component: () => import('../views/auth/login.vue'),
       meta: {
-        title: 'Signin',
+        title: 'Login',
       },
     },
     {
