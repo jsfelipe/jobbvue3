@@ -73,7 +73,7 @@ const router = createRouter({
     {
       path: '/publicitarios',
       name: 'Publicitários',
-      component: () => import('../views/orcamentos/publicitarios.vue'),
+      component: () => import('../views/Orcamentos/publicitarios.vue'),
       meta: {
         title: 'Publicitários',
       },
@@ -81,7 +81,7 @@ const router = createRouter({
     {
       path: '/audiovisual',
       name: 'Audiovisual',
-      component: () => import('../views/orcamentos/audiovisual.vue'),
+      component: () => import('../views/Orcamentos/audiovisual.vue'),
       meta: {
         title: 'Audiovisual',
       },
@@ -289,7 +289,7 @@ const router = createRouter({
     {
       path: '/Opcoes-gerais',
       name: 'Opções gerais',
-      component: () => import('../views/configuracoes/opcoes-gerais.vue'),
+      component: () => import('../views/Configuracoes/opcoes-gerais.vue'),
       meta: {
         title: 'Opções gerais',
       },
@@ -297,7 +297,7 @@ const router = createRouter({
     {
       path: '/Modelo-de-carta',
       name: 'Modelo de carta',
-      component: () => import('../views/configuracoes/modelo-de-carta.vue'),
+      component: () => import('../views/Configuracoes/modelo-de-carta.vue'),
       meta: {
         title: 'Modelo de carta',
       },
@@ -305,7 +305,7 @@ const router = createRouter({
     {
       path: '/Contratos',
       name: 'Contratos',
-      component: () => import('../views/configuracoes/contratos.vue'),
+      component: () => import('../views/Configuracoes/contratos.vue'),
       meta: {
         title: 'Contratos',
       },
@@ -335,11 +335,11 @@ const router = createRouter({
     //   },
     // },
     {
-      path: '/signin',
-      name: 'Signin',
-      component: () => import('../views/auth/signin.vue'),
+      path: '/login',
+      name: 'Login',
+      component: () => import('../views/auth/login.vue'),
       meta: {
-        title: 'Signin',
+        title: 'Login',
       },
     },
     {

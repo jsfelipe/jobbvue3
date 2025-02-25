@@ -1,6 +1,6 @@
 <template>
   <FullScreenLayout>
-    <div class="relative flex w-full h-screen px-4 py-6 overflow-hidden bg-white z-1 dark:bg-gray-900 sm:p-0">
+    <div class="login relative flex w-full h-screen px-4 py-6 overflow-hidden bg-white z-1 dark:bg-gray-900 sm:p-0">
       <div class="flex flex-col flex-1 p-6 rounded-2xl sm:rounded-none sm:border-0 sm:p-8">
         <div class="w-full max-w-md pt-10 mx-auto">
           <router-link
@@ -28,17 +28,12 @@
         </div>
         <div class="flex flex-col justify-center flex-1 w-full max-w-md mx-auto">
           <div>
-            <div class="mb-5 sm:mb-8">
-              <h1 class="mb-2 font-semibold text-gray-800 text-title-sm dark:text-white/90 sm:text-title-md">
-                Acessar
-              </h1>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                Digite seu domínio, login e senha para entrar!
-              </p>
+            <div class="mb-5 sm:mb-8 flex justify-center">
+              <img class="dark:hidden" src="/images/logo/logo-jobb.svg" alt="Logo sistema jobb" />
             </div>
             <div>
               <form @submit.prevent="submitForm">
-                <div class="space-y-5">
+                <div class="space-y-5 p-5 rounded-md bg-gray-200">
                   <!-- Dominio -->
                   <div>
                     <label for="dominio" class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400">
@@ -50,7 +45,7 @@
                         type="text"
                         id="dominio"
                         placeholder="Insira seu domínio"
-                        class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-transparent px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-none focus:ring focus:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
+                        class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-orange-300 focus:outline-none focus:ring focus:ring-orange-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-orange-800"
                         :class="{ 'border-error-500': errorMessage }"
                       />
                       <span v-if="errorMessage" class="text-sm text-error-500">{{ errorMessage }}</span>
@@ -67,7 +62,7 @@
                         type="text"
                         id="login"
                         placeholder="Insira seu login"
-                        class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-transparent px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-none focus:ring focus:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
+                        class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-orange-300 focus:outline-none focus:ring focus:ring-orange-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-orange-800"
                         :class="{ 'border-error-500': errorMessage }"
                       />
                       <span v-if="errorMessage" class="text-sm text-error-500">{{ errorMessage }}</span>
@@ -85,7 +80,7 @@
                           :type="showPassword ? 'text' : 'password'"
                           id="senha"
                           placeholder="Insira sua senha"
-                          class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-transparent py-2.5 pl-4 pr-11 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-none focus:ring focus:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
+                          class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-white py-2.5 pl-4 pr-11 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-orange-300 focus:outline-none focus:ring focus:ring-orange-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-orange-800"
                           :class="{ 'border-error-500': errorMessage }"
                         />
                         <span
@@ -133,7 +128,7 @@
                   <div>
                     <button
                       type="submit"
-                      class="flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white transition rounded-lg bg-brand-500 shadow-theme-xs hover:bg-brand-600"
+                      class="flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white transition rounded-lg bg-orange-500 shadow-theme-xs hover:bg-orange-600"
                       :disabled="loading"
                     >
                       <span v-if="loading">Carregando...</span>
@@ -145,7 +140,7 @@
               <div class="mt-5">
                 <p class="text-sm font-normal text-center text-gray-700 dark:text-gray-400 sm:text-start">
                   Ainda não tem uma conta?
-                  <a :href="linkCad" class="text-brand-500 hover:text-brand-600 dark:text-brand-400">CADASTRE-SE!</a>
+                  <a :href="linkCad" class="text-orange-500 hover:text-orange-600 dark:text-orange-400">CADASTRE-SE!</a>
                 </p>
               </div>
             </div>
