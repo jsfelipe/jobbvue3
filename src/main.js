@@ -11,9 +11,11 @@ import App from './App.vue'
 import router from './router/index.js'
 import store from './store/index.js'
 import VueApexCharts from 'vue3-apexcharts'
+import ElementPlus from 'element-plus';
 import { api, apiV2,  $api } from "./services/http";
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
+import 'element-plus/dist/index.css'
 
 const app = createApp(App)
 
@@ -34,6 +36,7 @@ app.config.globalProperties.$rt = router
 
 app.use(router)
 app.use(store)
+app.use(ElementPlus)
 app.use(VueApexCharts)
 
 app.mount('#app')

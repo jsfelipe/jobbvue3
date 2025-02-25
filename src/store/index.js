@@ -3,6 +3,7 @@ import Persist from 'vuex-persist'
 import Login from './modules/Login'
 import Perfil from './modules/Perfil'
 import Permissoes from './modules/Permissoes'
+import Empresa from "./modules/Empresa"
 // import Dashboard from './modules/Dashboard'
 // import Empresa from './modules/Empresa'
 // import Pessoa from './modules/Pessoa'
@@ -15,8 +16,8 @@ const VuexLocal = new Persist({
     'Login',
     'Perfil',
     'Permissoes',
+    'Empresa',
     // 'Dashboard',
-    // 'Empresa',
     // 'Pessoa',
     // 'CamposPersonalizados'
   ],
@@ -28,8 +29,8 @@ const store = createStore({
     Login,
     Perfil,
     Permissoes,
+    Empresa,
     // Dashboard,
-    // Empresa,
     // Pessoa,
     // CamposPersonalizados
   },
