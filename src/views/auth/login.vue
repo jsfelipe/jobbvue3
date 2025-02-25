@@ -213,7 +213,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import CommonGridShape from '@/components/common/CommonGridShape.vue'
 import FullScreenLayout from '@/components/layout/FullScreenLayout.vue'
 const email = ref('')
 const password = ref('')
