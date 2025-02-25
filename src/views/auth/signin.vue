@@ -1,7 +1,7 @@
 <template>
   <FullScreenLayout>
     <div
-      class="relative flex w-full h-screen px-4 py-6 overflow-hidden bg-white z-1 dark:bg-gray-900 sm:p-0"
+      class="login relative flex w-full h-screen px-4 py-6 overflow-hidden bg-white z-1 dark:bg-gray-900 sm:p-0"
     >
       <div class="flex flex-col flex-1 p-6 rounded-2xl sm:rounded-none sm:border-0 sm:p-8">
         <div class="w-full max-w-md pt-10 mx-auto">
@@ -30,20 +30,13 @@
         </div>
         <div class="flex flex-col justify-center flex-1 w-full max-w-md mx-auto">
           <div>
-            <div class="mb-5 sm:mb-8">
-              <h1
-                class="mb-2 font-semibold text-gray-800 text-title-sm dark:text-white/90 sm:text-title-md"
-              >
-                Sign In
-              </h1>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                Digite seu e-mail e senha para entrar!
-              </p>
+            <div class="mb-5 sm:mb-8 flex justify-center">
+              <img class="dark:hidden" src="/images/logo/logo-jobb.svg" alt="Logo sistema jobb" />
             </div>
             <div>
              
               <form @submit.prevent="handleSubmit">
-                <div class="space-y-5">
+                <div class="space-y-5 p-5 rounded-md bg-gray-200">
                   <!-- Dominio -->
                   <div>
                     <label
@@ -58,7 +51,7 @@
                       id="email"
                       name="email"
                       placeholder="info@gmail.com"
-                      class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-transparent px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-none focus:ring focus:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
+                      class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-none focus:ring focus:ring-orange-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
                     />
                   </div>
                   <!-- Email -->
@@ -75,7 +68,7 @@
                       id="email"
                       name="email"
                       placeholder="info@gmail.com"
-                      class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-transparent px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-none focus:ring focus:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
+                      class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-none focus:ring focus:ring-orange-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
                     />
                   </div>
                   <!-- Password -->
@@ -92,7 +85,7 @@
                         :type="showPassword ? 'text' : 'password'"
                         id="password"
                         placeholder="Enter your password"
-                        class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-transparent py-2.5 pl-4 pr-11 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-none focus:ring focus:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
+                        class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-white py-2.5 pl-4 pr-11 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-none focus:ring focus:ring-orange-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
                       />
                       <span
                         @click="togglePasswordVisibility"
@@ -145,13 +138,13 @@
                             v-model="keepLoggedIn"
                             type="checkbox"
                             id="keepLoggedIn"
-                            class="sr-only"
+                            class="sr-only "
                           />
                           <div
                             :class="
                               keepLoggedIn
-                                ? 'border-brand-500 bg-brand-500'
-                                : 'bg-transparent border-gray-300 dark:border-gray-700'
+                                ? 'border-orange-500 bg-orange-500'
+                                : 'bg-white border-gray-300 dark:border-gray-700'
                             "
                             class="mr-3 flex h-5 w-5 items-center justify-center rounded-md border-[1.25px]"
                           >
@@ -177,25 +170,25 @@
                         Mantenha-me conectado!
                       </label>
                     </div>
-                    <router-link to="/reset-password" class="text-sm text-brand-500 hover:text-brand-600 dark:text-brand-400">Forgot password?</router-link>
+                    <router-link to="/reset-password" class="text-sm text-orange-500 hover:text-orange-600 dark:text-orange-400">Esqueceu sua senha?</router-link>
                   </div>
                   <!-- Button -->
                   <div>
                     <button
                       type="submit"
-                      class="flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white transition rounded-lg bg-brand-500 shadow-theme-xs hover:bg-brand-600"
+                      class="flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white transition rounded-lg bg-orange-500 shadow-theme-xs hover:bg-orange-600"
                     >
-                      Sign In
+                      Logar
                     </button>
                   </div>
                 </div>
               </form>
               <div class="mt-5">
                 <p class="text-sm font-normal text-center text-gray-700 dark:text-gray-400 sm:text-start">
-                  Don't have an account?
+                  Não tem uma conta?
                   <router-link
                     to="/signup"
-                    class="text-brand-500 hover:text-brand-600 dark:text-brand-400">Sign Up</router-link
+                    class="text-orange-500 hover:text-orange-600 dark:text-orange-400">Inscrever-se</router-link
                   >
                 </p>
               </div>
