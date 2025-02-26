@@ -1,13 +1,14 @@
 import BoxCubeIcon from "./BoxCubeIcon.vue";
 import GridIcon from "./GridIcon.vue";
-import CalenderIcon from "./CalenderIcon.vue";
-import TaskIcon from "./TaskIcon.vue";
+import CadastrosIcon from "./CadastrosIcon.vue";
+import TarefasIcon from "./TarefasIcon.vue";
+import OrcamentosIcon from "./OrcamentosIcon.vue";
+import FinanceiroIcon from "./FinanceiroIcon.vue";
 import ChatIcon from "./ChatIcon.vue";
-import MailIcon from "./MailIcon.vue";
-import DocsIcon from "./DocsIcon.vue";
-import PieChartIcon from "./PieChartIcon.vue";
+import EquipamentosIcon from "./EquipamentosIcon.vue";
+import RelatoriosIcon from "./RelatoriosIcon.vue";
 import UserCircleIcon from "./UserCircleIcon.vue";
-import ChevronDownIcon from "./ChevronDownIcon.vue";
+import ConfiguracoesIcon from "./ConfiguracoesIcon.vue";
 import HorizontalDots from "./HorizontalDots.vue";
 import PlugInIcon from "./PlugInIcon.vue";
 import PageIcon from "./PageIcon.vue";
@@ -18,10 +19,10 @@ import WarningIcon from "./WarningIcon.vue";
 import PlusIcon from "./PlusIcon.vue";
 import TrashIconLg from "./TrashIconLg.vue";
 import ListIcon from "./ListIcon.vue";
+import ChevronDownIcon from "./ChevronDownIcon.vue";
 import TableIcon from "./TableIcon.vue";
 import LogoutIcon from "./LogoutIcon.vue";
 import InfoCircleIcon from "./InfoCircleIcon.vue";
-import FolderIcon from "./FolderIcon.vue";
 import SettingsIcon from "./SettingsIcon.vue";
 import HomeIcon from "./HomeIcon.vue";
 import ChevronRightIcon from "./ChevronRightIcon.vue";
@@ -49,9 +50,15 @@ import BarChartIcon from "./BarChartIcon.vue";
 export {
   BellIcon,
   BarChartIcon,
+  CadastrosIcon,
+  TarefasIcon,
+  OrcamentosIcon,
+  FinanceiroIcon,
+  EquipamentosIcon,
+  RelatoriosIcon,
   LayoutDashboardIcon,
   UserGroupIcon,
-  FolderIcon,
+  ConfiguracoesIcon,
   TrashIconLg,
   SupportIcon,
   HomeIcon,
